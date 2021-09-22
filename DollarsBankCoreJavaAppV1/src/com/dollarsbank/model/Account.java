@@ -1,5 +1,7 @@
 package com.dollarsbank.model;
 
+import java.util.ArrayList;
+
 import org.w3c.dom.UserDataHandler;
 
 public class Account {
@@ -16,6 +18,8 @@ public class Account {
 	private String password;
 	
 	private double depositedAmount;
+	
+	private ArrayList<String> transcationHistory = new ArrayList<String>();
 
 	
 	
@@ -87,6 +91,20 @@ public class Account {
 	public void setDepositedAmount(double depositedAmount) {
 		this.depositedAmount = depositedAmount;
 	}
+
+
+
+	public ArrayList<String> getTranscationHistory() {
+		return transcationHistory;
+	}
+
+
+
+	public void setTranscationHistory(ArrayList<String> transcationHistory) {
+		this.transcationHistory = transcationHistory;
+	}
+	
+	
 	
 	
 }

@@ -2,7 +2,11 @@ package com.dollarsbank.utility;
 
 import java.util.Scanner;
 
+import org.w3c.dom.UserDataHandler;
+
 import com.dollarsbank.model.Account;
+import com.dollarsbank.model.Customer;
+
 
 public class ConsolePrinterUtility {
 
@@ -54,4 +58,29 @@ public class ConsolePrinterUtility {
 		
 		
 	}
+
+
+	public static Customer Login(Scanner input) {
+		System.out.println(MENU_STRING);
+		System.out.println(SIDE_MENU_STRING +
+				"Enter Login Details"
+				+ SIDE_MENU_STRING_END_STRING);
+		
+		System.out.println("User Id : ");
+		
+		String userId = input.nextLine();
+		
+		System.out.println("Password : ");
+		
+		String password = input.nextLine();
+		
+		return new Customer(userId, password);
+		
+		
+		
+		
+	}
+
+
+
 }

@@ -17,15 +17,32 @@ public class ConsolePrinterUtility {
 	
 	
 	public static int welcomeToBank(Scanner input) {
+		int choice = 0;
+		while(choice != 1 && choice != 2 && choice != 3) {
 		menuBlock("DOLLARSBANK Welcomes You!");
 		System.out.println("1. Create New Account");
 		System.out.println("2. Login");
 		System.out.println("3. Exit.");
 		
 		System.out.println("\nEnter Choice (1,2 or 3)  :");
-		int choice = input.nextInt();
-		return choice;
+		
+		String inputChoice = input.nextLine();
+		
+		try {
+			choice = Integer.parseInt(inputChoice);
+			if(choice != 1 && choice != 2 && choice != 3) {
+				System.out.println("The value you entered is not "
+						+ "a valid response!");
+			}
+		}catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("Invalid Input!!!");
+		}
+		
 	}
+		return choice;
+		
+}
 	
 	public static Account newAccount(Scanner input ) {
 				menuBlock("Enter Details For New Account");

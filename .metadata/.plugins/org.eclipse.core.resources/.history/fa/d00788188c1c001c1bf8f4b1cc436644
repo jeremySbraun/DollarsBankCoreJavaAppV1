@@ -1,0 +1,31 @@
+package com.dollarsbank.controller;
+
+import java.util.Scanner;
+
+import com.dollarsbank.utility.ConsolePrinterUtility;
+
+public class DollarsBankController {
+
+	
+	
+	public static void run() {
+		Scanner userInput = new Scanner(System.in);
+		
+		int choice = ConsolePrinterUtility.welcomeToBank(userInput);
+		
+		
+		switch(choice) {
+		case 1: ConsolePrinterUtility.newAccount(userInput);
+			break;
+		
+			
+		case 2: ConsolePrinterUtility.Login(userInput);
+			break;
+			
+		case 3: 
+			System.out.println("Enjoy your day!");
+			System.exit(0);
+		}
+		
+	}
+}

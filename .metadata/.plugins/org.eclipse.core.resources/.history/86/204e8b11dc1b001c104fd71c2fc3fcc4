@@ -1,0 +1,123 @@
+package com.dollarsbank.utility;
+
+import java.util.Scanner;
+
+import org.w3c.dom.UserDataHandler;
+
+import com.dollarsbank.model.Account;
+import com.dollarsbank.model.Customer;
+
+
+public class ConsolePrinterUtility {
+
+	
+	private static final String MENU_STRING = "+-----------------------------+";
+	private static final String SIDE_MENU_STRING = "| ";
+	private static final String SIDE_MENU_STRING_END_STRING = " |";
+	
+	
+	public static int welcomeToBank(Scanner input) {
+		System.out.println(MENU_STRING);
+		System.out.println(SIDE_MENU_STRING 
+				+ "DOLLARSBANK Welcomes You!" + SIDE_MENU_STRING_END_STRING);
+		System.out.println(MENU_STRING);
+		System.out.println("1. Create New Account");
+		System.out.println("2. Login");
+		System.out.println("3. Exit.");
+		
+		System.out.println("\nEnter Choice (1,2 or 3)  :");
+		int choice = input.nextInt();
+		return choice;
+	}
+	
+	public static Account newAccount(Scanner input ) {
+		System.out.println(MENU_STRING);
+		System.out.println(SIDE_MENU_STRING +
+				"Enter Details For New Account"
+				+ SIDE_MENU_STRING_END_STRING);
+		System.out.println(MENU_STRING);
+		
+		System.out.println("Customer Name: ");
+		String nameString = input.nextLine();
+		
+		System.out.println("Customer Address: ");
+		String addressString = input.nextLine();
+		
+		System.out.println("Customer Contact Info: ");
+		String contactString = input.nextLine();
+		
+		//TODO add logic to check for proper number
+		
+		System.out.println("User Id: ");
+		String userId = input.nextLine();
+		
+		System.out.println("Password: ");
+		String password = input.nextLine();
+		
+		System.out.println("Initial Deposit Amount");
+		Double initialDeposit = input.nextDouble();
+		
+		//TODO check for deposit amount 
+		
+		return new Account(nameString, addressString, contactString, userId, password,
+				initialDeposit);
+		
+		
+	}
+
+
+	public static Customer Login(Scanner input) {
+		System.out.println(MENU_STRING);
+		System.out.println(SIDE_MENU_STRING +
+				"Enter Login Details"
+				+ SIDE_MENU_STRING_END_STRING);
+		System.out.println(MENU_STRING);
+		
+		System.out.println("User Id : ");
+		
+		String userId = input.nextLine();
+		
+		System.out.println("Password : ");
+		
+		String password = input.nextLine();
+		
+		return new Customer(userId, password);
+		
+		
+		
+		
+	}
+	
+	public static int welcomeCustomer(Scanner input) {
+		menuBlock("WELCOME Customer");
+		
+		System.out.println("1. Deposit Amount");
+		System.out.println("2. Withdraw Amount");
+		System.out.println("3. Funds Transfer");
+		System.out.println("4. View 5 Recent Transactions");
+		System.out.println("5. Display Customer Information");
+		System.out.println("6. Sign Out");
+		
+		System.out.println("\nEnter Choice (1,2,3,4,5 or 6)  :");
+		
+		int choice = input.nextInt();
+		return choice;
+		
+	}
+	
+	public static void depositAmount() {
+		
+		
+	}
+	
+	public static void menuBlock(String title) {
+		System.out.println(MENU_STRING);
+		System.out.println(SIDE_MENU_STRING +
+				title
+				+ SIDE_MENU_STRING_END_STRING);
+		System.out.println(MENU_STRING);
+	}
+
+
+
+}

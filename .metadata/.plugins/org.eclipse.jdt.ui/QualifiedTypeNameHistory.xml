@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Double"/>
+    <fullyQualifiedTypeName name="java.util.logging.LoggingMXBean"/>
+    <fullyQualifiedTypeName name="sun.security.jgss.LoginConfigImpl"/>
+    <fullyQualifiedTypeName name="org.w3c.dom.UserDataHandler"/>
+    <fullyQualifiedTypeName name="com.dollarsbank.model.SavingsAccount"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.dollarsbank.model.Customer"/>
+    <fullyQualifiedTypeName name="com.dollarsbank.applications.DollarsBankApplication"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.dollarsbank.utility.ConsolePrinterUtility"/>
+    <fullyQualifiedTypeName name="com.dollarsbank.controller.DollarsBankController"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.security.InvalidAlgorithmParameterException"/>
+    <fullyQualifiedTypeName name="com.dollarsbank.model.Account"/>
+    <fullyQualifiedTypeName name="com.dollarsbank.utility.FileStorageUtility"/>
+</qualifiedTypeNameHistroy>

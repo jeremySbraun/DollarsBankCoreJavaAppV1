@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\93jer\Documents\GitHub\DollarsBankCoreJavaAppV1\.metadata\.plugins\org.eclipse.jdt.core
+447825695.index
+807795754.index
